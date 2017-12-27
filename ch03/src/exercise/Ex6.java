@@ -8,7 +8,7 @@ public class Ex6 {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Á¤¼ö ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì •ìˆ˜ í•˜ë‚˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”.");
 		int A = input.nextInt();
 	
 		
@@ -18,7 +18,7 @@ public class Ex6 {
 		int ten = (A%100)/10;
 		int one = A%10;
 		
-		System.out.printf("%d¸¸ %dÃµ %d¹é %d½Ê %dÀÔ´Ï´Ù.", man, thousand, hundread, ten, one);
+		System.out.printf("%dë§Œ %dì²œ %dë°± %dì‹­ %dìž…ë‹ˆë‹¤.", man, thousand, hundread, ten, one);
 		
 		
 		input.close();

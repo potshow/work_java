@@ -8,7 +8,7 @@ public class Ex10 {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä >>");
+		System.out.println("ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš” >>");
 		int money = input.nextInt();
 		
 		int fiveman = money / 50000;
@@ -37,7 +37,7 @@ public class Ex10 {
 		 int fiveChun = money % 10000 / 5000;
 		 int chun = money % 5000 / 1000;
 		 
-		 System.out.printf("5¸¸¿ø±Ç %d°³, 1¸¸¿ø±Ç %d°³, 5Ãµ¿ø±Ç %d°³, Ãµ¿ø±Ç %d°³%n", fiveman, man, fiveChun,chun);
+		 System.out.printf("5ë§Œì›ê¶Œ %dê°œ, 1ë§Œì›ê¶Œ %dê°œ, 5ì²œì›ê¶Œ %dê°œ, ì²œì›ê¶Œ %dê°œ%n", fiveman, man, fiveChun,chun);
 		 */
 		
 	}

@@ -9,7 +9,7 @@ public class HelloPrintf {
 		System.out.format("%-6d %-6o %-6x %n", 20, 20, 20);
 		System.out.format("%+6d %6o %6H %n", 30, 30, 30);
 		System.out.format("%1$6d %1$6o %1$6h %n", 128);
-		System.out.printf("%1$6.2f %1$6.3f %1$6.4f %n", 3.141592); // .2f < ´Â ¼Ò¼ö ¼ÂÂ°ÀÚ¸®¿¡¼­ ¹Ý¿Ã¸²
+		System.out.printf("%1$6.2f %1$6.3f %1$6.4f %n", 3.141592); // .2f < ëŠ” ì†Œìˆ˜ ì…‹ì§¸ìžë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼
 		
 		System.out.format("%2$d %1$d", 100, 200);
 		

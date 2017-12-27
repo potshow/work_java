@@ -6,15 +6,15 @@ public class PersonInfo {
 
 	public static void main(String[] args) {
 		
-		//inputÀº º¯¼öÀÌ¸§ÀÓ. ¤¾¤¾ Å°º¸µå ÀÔ·Â¹ŞÀ» ÁØºñ ³¡!
+		//inputì€ ë³€ìˆ˜ì´ë¦„ì„. ã…ã… í‚¤ë³´ë“œ ì…ë ¥ë°›ì„ ì¤€ë¹„ ë!
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("¸ö¹«°Ô¿Í Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ëª¸ë¬´ê²Œì™€ í‚¤ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		
 		int weight = input.nextInt();
 		double height = input.nextDouble();
 		
-		System.out.print("¸ö¹«°Ô : " + weight + "kg "+ " Å° : " + height + "cm");
+		System.out.print("ëª¸ë¬´ê²Œ : " + weight + "kg "+ " í‚¤ : " + height + "cm");
 		
 		input.close();
 		

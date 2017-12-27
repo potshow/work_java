@@ -4,14 +4,14 @@ public class PriorityOP {
 	
 	public static void main(String[] args) {
 		
-		//°ıÈ£´Â 0¼øÀ§. °ıÈ£ Ä£°ÅºÎÅÍ ¸ÕÀú ¿¬»êÇÕ´Ï´Ù.
+		//ê´„í˜¸ëŠ” 0ìˆœìœ„. ê´„í˜¸ ì¹œê±°ë¶€í„° ë¨¼ì € ì—°ì‚°í•©ë‹ˆë‹¤.
 		
-		System.out.println(3 + 4 >> 2 > 5); // 1 > 5 ¶ó¼­ false
-		System.out.println(((3 + 4) >> 2 ) > 5); // 1 > 5 ¶ó¼­ false
+		System.out.println(3 + 4 >> 2 > 5); // 1 > 5 ë¼ì„œ false
+		System.out.println(((3 + 4) >> 2 ) > 5); // 1 > 5 ë¼ì„œ false
 		System.out.println(3*4 & 4-3 << 5); // 3*4 & 64
 		System.out.println(3*4 & (4-3 <<5));// 3*4 & 64
 		System.out.println((3*4 & 4-3) < 5); // TrUE
-		System.out.println((1&0) != 1 && 3<<2 > 5); // 0 != 1 && 12 > 5 -> Æ®·ç... 
+		System.out.println((1&0) != 1 && 3<<2 > 5); // 0 != 1 && 12 > 5 -> íŠ¸ë£¨... 
 		
 	}
 

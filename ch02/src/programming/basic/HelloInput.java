@@ -3,15 +3,15 @@ package programming.basic;
 public class HelloInput {
 	
 	public static void main(String[] args) {
-		//System.in Àº Å°º¸µåÀÌ ÀÔ·Â½ºÆ®¸²
+		//System.in ì€ í‚¤ë³´ë“œì´ ì…ë ¥ìŠ¤íŠ¸ë¦¼
 		java.util.Scanner input = new java.util.Scanner(System.in);
 		
-		System.out.println("ÀÌ¸§°ú ÇĞ¹øÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
-		//ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­À» ÅäÅ«À¸·Î ±¸ºĞÁö¾î¼­ ¹®ÀÚ¿­ ÀÏºÎ¸¦ ¸®ÅÏ
+		System.out.println("ì´ë¦„ê³¼ í•™ë²ˆì„ ì…ë ¥í•˜ì„¸ìš”.");
+		//ì…ë ¥ë°›ì€ ë¬¸ìì—´ì„ í† í°ìœ¼ë¡œ êµ¬ë¶„ì§€ì–´ì„œ ë¬¸ìì—´ ì¼ë¶€ë¥¼ ë¦¬í„´
 		String name = input.next();
 		int num = input.nextInt();
 	
-		System.out.println("ÀÌ¸§ : " + name + ", ÇĞ¹ø : " + num);
+		System.out.println("ì´ë¦„ : " + name + ", í•™ë²ˆ : " + num);
 	}
 
 }

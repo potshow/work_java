@@ -8,16 +8,16 @@ public class Ex5 {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("³âµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä >>");
+		System.out.println("ë…„ë„ë¥¼ ì…ë ¥í•˜ì„¸ìš” >>");
 		int year = input.nextInt();
 
 		boolean cond1 = year%4 == 0;
 		boolean cond2 = year%100 != 0;
 		boolean cond3 = year%400 == 0;
 		
-		if (cond1 && cond2 || cond3) { System.out.println("À±³âÀÔ´Ï´Ù.");	}
+		if (cond1 && cond2 || cond3) { System.out.println("ìœ¤ë…„ì…ë‹ˆë‹¤.");	}
 			
-		else { System.out.println("Æò³âÀÔ´Ï´Ù."); }
+		else { System.out.println("í‰ë…„ì…ë‹ˆë‹¤."); }
 		
 		input.close();
 		

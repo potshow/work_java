@@ -8,12 +8,12 @@ public class RelationalOP {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("µÎ Á¤¼ö¸¦ ÀÔ·Â >>");
+		System.out.println("ë‘ ì •ìˆ˜ë¥¼ ìž…ë ¥ >>");
 		
 		int x = scan.nextInt();
 		int y = scan.nextInt();
 		
-		System.out.format("%d > %d -> %b %n", x, y, x>y); // %b´Â ³í¸®°ªÀ» Ãâ·ÂÇÏ´Â Æ÷¸Ë
+		System.out.format("%d > %d -> %b %n", x, y, x>y); // %bëŠ” ë…¼ë¦¬ê°’ì„ ì¶œë ¥í•˜ëŠ” í¬ë§·
 		System.out.format("%d >= %d -> %b %n", x, y, x>=y);
 		System.out.format("%d < %d -> %b %n", x, y, x<y);
 		System.out.format("%d <= %d -> %b %n", x, y, x<=y);

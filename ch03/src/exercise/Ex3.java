@@ -13,7 +13,7 @@ public class Ex3 {
 		/*
 		* double pound = kg * 1000000 / 453592;
 		*/
-		System.out.printf("%.1fkgÀº %.3fÆÄ¿îµå ÀÔ´Ï´Ù.", kg, pound);
+		System.out.printf("%.1fkgì€ %.3fíŒŒìš´ë“œ ì…ë‹ˆë‹¤.", kg, pound);
 		
 		input.close();
 	}

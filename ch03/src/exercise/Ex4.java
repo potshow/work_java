@@ -10,26 +10,26 @@ public class Ex4 {
 		
 
 		
-		System.out.println("¹®ÀÚ ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ¼·¾¾(C) È­¾¾(F) >> ");
+		System.out.println("ë¬¸ì í•˜ë‚˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”. ì„­ì”¨(C) í™”ì”¨(F) >> ");
 		String whichone = input.next();
 		
-		System.out.println("¿ÂµµÀÔ·Â");
+		System.out.println("ì˜¨ë„ì…ë ¥");
 		double degree = input.nextDouble();
-		//input.next().charAt(0); << ÀÔ·ÂµÈ string °ª¿¡¼­
-		//Ã¹±ÛÀÚ¸¸ °¡Á®¿È °³Â¾´ÙÀ×~~~~~`
+		//input.next().charAt(0); << ì…ë ¥ëœ string ê°’ì—ì„œ
+		//ì²«ê¸€ìë§Œ ê°€ì ¸ì˜´ ê°œì©ë‹¤ì‰~~~~~`
 		
 		switch(whichone) {
 		
 		case "F" :
 		case "f" :
 			degree = (5.0/9.0)*(degree-32);
-			System.out.printf("%.1f ¼·¾¾ÀÔ´Ï´Ù.", degree);
+			System.out.printf("%.1f ì„­ì”¨ì…ë‹ˆë‹¤.", degree);
 			break;
 			
 		case "C" :					
 		case "c" :
 			degree = (9.0/5.0)*degree + 32;
-			System.out.printf("%.1f È­¾¾ÀÔ´Ï´Ù.", degree);
+			System.out.printf("%.1f í™”ì”¨ì…ë‹ˆë‹¤.", degree);
 			break;
 			
 		}

@@ -8,7 +8,7 @@ public class Ex1 {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("µÎ ½Ç¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. >>");
+		System.out.println("ë‘ ì‹¤ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”. >>");
 		
 		double A = input.nextDouble();
 		double B = input.nextDouble();

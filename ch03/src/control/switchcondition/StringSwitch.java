@@ -7,32 +7,32 @@ public class StringSwitch {
 	public static void main(String[] args) {
 		
 		/*
-		 * switch Á¶°Ç¹®¿¡ »ç¿ëÇÏ°í ÀÖ´Â nation String º¯¼ö¸¦ ÀÌ¿ëÇÏ´Â ¹æ¹ıÀº
-		 * ÀÚ¹Ù 1.7 ¹öÀü ÀÌ»ó¿¡¼­ »ç¿ë°¡´É...!!!!
+		 * switch ì¡°ê±´ë¬¸ì— ì‚¬ìš©í•˜ê³  ìˆëŠ” nation String ë³€ìˆ˜ë¥¼ ì´ìš©í•˜ëŠ” ë°©ë²•ì€
+		 * ìë°” 1.7 ë²„ì „ ì´ìƒì—ì„œ ì‚¬ìš©ê°€ëŠ¥...!!!!
 		 */
 		
 		Scanner input = new Scanner(System.in);
-		System.out.println("³ª¶ó ÀÌ¸§À» ÀÔ·Â: ");
+		System.out.println("ë‚˜ë¼ ì´ë¦„ì„ ì…ë ¥: ");
 		String nation = input.next();
 		
 		switch (nation) {
 		
-			case "ÇÑ±¹" :
-			case "ÀÏº»" :
-			case "Áß±¹" :
-				System.out.printf("%sÀº(´Â) ¾Æ½Ã¾ÆÀÔ´Ï´Ù.\n", nation);
+			case "í•œêµ­" :
+			case "ì¼ë³¸" :
+			case "ì¤‘êµ­" :
+				System.out.printf("%sì€(ëŠ”) ì•„ì‹œì•„ì…ë‹ˆë‹¤.\n", nation);
 				break;
-			case "³²¾ÆÇÁ¸®Ä«" : case "¼ö´Ü" : case "¸ğ·ÎÄÚ" :
-				System.out.printf("%sÀº(´Â) ¾ÆÇÁ¸®Ä«ÀÔ´Ï´Ù.\n", nation);
+			case "ë‚¨ì•„í”„ë¦¬ì¹´" : case "ìˆ˜ë‹¨" : case "ëª¨ë¡œì½”" :
+				System.out.printf("%sì€(ëŠ”) ì•„í”„ë¦¬ì¹´ì…ë‹ˆë‹¤.\n", nation);
 				break;
-			case "¹Ì±¹" : case "¸ß½ÃÄÚ" : case "ºê¶óÁú" :
-				System.out.printf("%sÀº(´Â)   ¾Æ¸Ş¸®Ä«ÀÔ´Ï´Ù.\n", nation);
+			case "ë¯¸êµ­" : case "ë©•ì‹œì½”" : case "ë¸Œë¼ì§ˆ" :
+				System.out.printf("%sì€(ëŠ”)   ì•„ë©”ë¦¬ì¹´ì…ë‹ˆë‹¤.\n", nation);
 				break;
-			case "½ºÀ§½º" : case "¿µ±¹" : case "µ¶ÀÏ" :
-				System.out.printf("%sÀº(´Â) À¯·´ÀÔ´Ï´Ù.\n", nation);
+			case "ìŠ¤ìœ„ìŠ¤" : case "ì˜êµ­" : case "ë…ì¼" :
+				System.out.printf("%sì€(ëŠ”) ìœ ëŸ½ì…ë‹ˆë‹¤.\n", nation);
 				break;
 			default :
-				System.out.printf("¸ñ·Ï¿¡ ¾ø´Â ³ª¶óÀÔ´Ï´Ù.\n");
+				System.out.printf("ëª©ë¡ì— ì—†ëŠ” ë‚˜ë¼ì…ë‹ˆë‹¤.\n");
 				
 		}
 		

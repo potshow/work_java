@@ -4,13 +4,13 @@ public class HelloOverloading {
 
 	public static void main(String[] args) {
 		
-		/* ¸Þ¼Òµå ¿À¹ö·Îµù (method overloading) È£ÃâÁ¶°Ç -> ¸Þ¼­µåÀÌ¸§À» Áßº¹ÇØ¼­ ¾µ¼öÀÖ´ç
-		 * 1. Argument(Parameter)ÀÇ °³¼ö°¡ ÀÏÄ¡ÇÏ°í
-		 * 2. ArgumentÀÇ Å¸ÀÔÀÌ ÀÏÄ¡ÇÒ °æ¿ì
-		 * È£ÃâÇÑ Çü½Ä°ú ±¸ÇöÇÑ Çü½ÄÀÌ ÀÏÄ¡ÇÏ¸é ºÒ·¯¿ÍÁý´Ï´Ù.
+		/* ë©”ì†Œë“œ ì˜¤ë²„ë¡œë”© (method overloading) í˜¸ì¶œì¡°ê±´ -> ë©”ì„œë“œì´ë¦„ì„ ì¤‘ë³µí•´ì„œ ì“¸ìˆ˜ìžˆë‹¹
+		 * 1. Argument(Parameter)ì˜ ê°œìˆ˜ê°€ ì¼ì¹˜í•˜ê³ 
+		 * 2. Argumentì˜ íƒ€ìž…ì´ ì¼ì¹˜í•  ê²½ìš°
+		 * í˜¸ì¶œí•œ í˜•ì‹ê³¼ êµ¬í˜„í•œ í˜•ì‹ì´ ì¼ì¹˜í•˜ë©´ ë¶ˆëŸ¬ì™€ì§‘ë‹ˆë‹¤.
 		 */
 		
-		int sum = plus(10, 20); // << '20' ¾ê¶û 
+		int sum = plus(10, 20); // << '20' ì–˜ëž‘ 
 		System.out.println(sum);
 		
 		double sum01 = plus(10.25, 20.10);
@@ -18,7 +18,7 @@ public class HelloOverloading {
 		
 	}
 	
-	static int plus(int a, int b) { // << 'int b' ¾ê¶û Å¸ÀÔÀÌ ÀÏÄ¡ÇØ¾ß È£Ãâ°¡´É
+	static int plus(int a, int b) { // << 'int b' ì–˜ëž‘ íƒ€ìž…ì´ ì¼ì¹˜í•´ì•¼ í˜¸ì¶œê°€ëŠ¥
 		int result = a + b;
 		return result;
 	}

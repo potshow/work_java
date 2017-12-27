@@ -1,13 +1,13 @@
 package programming.basic;
 
-import java.util.Scanner; //½ºÄ³³Ê Å¬·¡½º ¾²°í ÄÁÆ®·Ñ+ ½¬ÇÁÆ®+ O ´©¸£¸é ÀÚµ¿À¸·Î Ãß°¡‰è 
+import java.util.Scanner; //ìŠ¤ìºë„ˆ í´ë˜ìŠ¤ ì“°ê³  ì»¨íŠ¸ë¡¤+ ì‰¬í”„íŠ¸+ O ëˆ„ë¥´ë©´ ìë™ìœ¼ë¡œ ì¶”ê°€Â‰?
 
 public class HelloOutput {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("½ÊÁø¼ö¿Í ÀÌÁø¼ö¸¦ °¢°¢ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì‹­ì§„ìˆ˜ì™€ ì´ì§„ìˆ˜ë¥¼ ê°ê° ì…ë ¥í•˜ì„¸ìš”.");
 		int num1 = input.nextInt();
 		int num2 = input.nextInt(2);
 		System.out.println("num1 = " + num1 + ", num2 = " + num2);

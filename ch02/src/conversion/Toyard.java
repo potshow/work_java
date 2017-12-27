@@ -7,7 +7,7 @@ public class Toyard {
 		double meter =  100.785;
 		double yard = 1.0936 * meter ;
 		
-		System.out.printf("%f ¾ßµå", yard);
+		System.out.printf("%f ì•¼ë“œ", yard);
 		
 		
 	}

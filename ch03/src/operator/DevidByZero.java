@@ -6,19 +6,19 @@ public class DevidByZero {
 		
 		short data1 = 32766;
 		short data2 = 1;
-		//short data3 = data1 + data2; short Å¸ÀÔ³¢¸® ´õÇØµµ ´õÇÏ°ÔµÇ¸é ´õÇÑ°ªÀÌ int·Î ¹Ù²ñ.
-		// ÀÚ¹Ù ÇÁ·Î±×·¥ÀÌ ±×·¸°Ô µÇ¾îÀÖÀ½.
+		//short data3 = data1 + data2; short íƒ€ì…ë¼ë¦¬ ë”í•´ë„ ë”í•˜ê²Œë˜ë©´ ë”í•œê°’ì´ intë¡œ ë°”ë€œ.
+		// ìë°” í”„ë¡œê·¸ë¨ì´ ê·¸ë ‡ê²Œ ë˜ì–´ìˆìŒ.
 		short data3 = (short)(data1 + data2);
 		short data4 = 32766 + 1;
 		System.out.println(data3 + "  " + data4);
 		
-		System.out.println(0.0 / 0.0); 	 // NaN = Not a Number ¼ıÀÚ°¡ ¾Æ´Ï´Ù
-		System.out.println(3 / 0.0);	 // ¹«ÇÑ´ë (3ÀÌ doubleÇüÀ¸·Î º¯È¯) ½Ç¼ö¿¡¼­´Â 0À» ³ª´©¸é ¹«ÇÑ´ë
-		System.out.println(3 / 0);		 // Á¤¼ö¸¦ 0À¸·Î ³ª´­ ¼ö ¾ø±â ¶§¹®¿¡ ¿¹¿Ü¹ß»ı
+		System.out.println(0.0 / 0.0); 	 // NaN = Not a Number ìˆ«ìê°€ ì•„ë‹ˆë‹¤
+		System.out.println(3 / 0.0);	 // ë¬´í•œëŒ€ (3ì´ doubleí˜•ìœ¼ë¡œ ë³€í™˜) ì‹¤ìˆ˜ì—ì„œëŠ” 0ì„ ë‚˜ëˆ„ë©´ ë¬´í•œëŒ€
+		System.out.println(3 / 0);		 // ì •ìˆ˜ë¥¼ 0ìœ¼ë¡œ ë‚˜ëˆŒ ìˆ˜ ì—†ê¸° ë•Œë¬¸ì— ì˜ˆì™¸ë°œìƒ
 		
-		//exception °ú Err´Â ´Ù¸¨´Ï´Ù.
-		//NaN °ªÀÌ ¿¬»ê¿¡ µé¾î°¡¸é ¸ğµç °á°ú°¡ NaNÀ¸·Î ³ª¿È.
-		//Double.isNaN ,  Float.isNaN int ÇüÀº ¾ø»ï
+		//exception ê³¼ ErrëŠ” ë‹¤ë¦…ë‹ˆë‹¤.
+		//NaN ê°’ì´ ì—°ì‚°ì— ë“¤ì–´ê°€ë©´ ëª¨ë“  ê²°ê³¼ê°€ NaNìœ¼ë¡œ ë‚˜ì˜´.
+		//Double.isNaN ,  Float.isNaN int í˜•ì€ ì—†ì‚¼
 		
 		
 		

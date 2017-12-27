@@ -4,12 +4,12 @@ public class HelloChars {
 	
 	public static void main(String[] args) {
 	
-		System.out.println('a'); //charÇü
-		System.out.println('\\'); //ÀÛÀºµû¿ÈÇ¥ ¾È¿¡´Â ¹®ÀÚ ÇÏ³ª¸¸ µé¾î¿À°ÔµÇ¾îÀÖÁö¸¸..Æ¯¼ö¹®ÀÚÀÌ±â¿¡ ¤·¤».
-		System.out.println('\142'); //8Áø¼ö 142ÀÇ ASCIIÄÚµå°ª (10Áø¼ö 98ÀÇ ASCII ÄÚµå°ª)
-		System.out.println('\uAC00'); // À¯´ÏÄÚµå°ª AC00: °¡
-		System.out.println('\uAC01'); // À¯´ÏÄÚµå°ª AC01 : °¢
-		System.out.println('°­');
+		System.out.println('a'); //charí˜•
+		System.out.println('\\'); //ì‘ì€ë”°ì˜´í‘œ ì•ˆì—ëŠ” ë¬¸ì í•˜ë‚˜ë§Œ ë“¤ì–´ì˜¤ê²Œë˜ì–´ìˆì§€ë§Œ..íŠ¹ìˆ˜ë¬¸ìì´ê¸°ì— ã…‡ã…‹.
+		System.out.println('\142'); //8ì§„ìˆ˜ 142ì˜ ASCIIì½”ë“œê°’ (10ì§„ìˆ˜ 98ì˜ ASCII ì½”ë“œê°’)
+		System.out.println('\uAC00'); // ìœ ë‹ˆì½”ë“œê°’ AC00: ê°€
+		System.out.println('\uAC01'); // ìœ ë‹ˆì½”ë“œê°’ AC01 : ê°
+		System.out.println('ê°•');
 		
 		System.out.print("Hello\nWorld\tHi\b\rABC\r\n");
 		System.out.println("\'");

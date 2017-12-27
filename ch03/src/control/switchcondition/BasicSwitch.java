@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BasicSwitch {
 
 	
-	//import ´ÜÃàÅ° : Ctrl + Shift + O???????????
+	//import ë‹¨ì¶•í‚¤ : Ctrl + Shift + O???????????
 	
 	public static void main(String[] args) {
 		
@@ -13,17 +13,17 @@ public class BasicSwitch {
 		int op;
 		
 		Scanner input = new Scanner(System.in);
-		System.out.print("µÎ ½Ç¼ö ÀÔ·Â: ");
+		System.out.print("ë‘ ì‹¤ìˆ˜ ì…ë ¥: ");
 		
 		x = input.nextDouble(); 
 		y = input.nextDouble();
-		System.out.print("¹øÈ£¼±ÅÃ 1(+), 2(-), 3(*), 4(/): ");
+		System.out.print("ë²ˆí˜¸ì„ íƒ 1(+), 2(-), 3(*), 4(/): ");
 		op = input.nextInt();
 		
 		switch (op) {
-			case 1: // 1 << ÀÌ opÀÇ °ªÀÌ µÇ´Â°Í. º¯¼ö¸í°ú´Â ´Ù¸¨´Ï´Ù.
+			case 1: // 1 << ì´ opì˜ ê°’ì´ ë˜ëŠ”ê²ƒ. ë³€ìˆ˜ëª…ê³¼ëŠ” ë‹¤ë¦…ë‹ˆë‹¤.
 			System.out.printf("%.2f + %.2f = %.2f\n", x, y, x + y);
-			break; // break°¡ ¾øÀ» ½Ã¿¡ À§¿¡¼­ ¹ØÀ¸·Î ÀüºÎ´Ù ½ÇÇàµË´Ï´Ù.
+			break; // breakê°€ ì—†ì„ ì‹œì— ìœ„ì—ì„œ ë°‘ìœ¼ë¡œ ì „ë¶€ë‹¤ ì‹¤í–‰ë©ë‹ˆë‹¤.
 			
 			case 2:
 			System.out.printf("%.2f + %.2f = %.2f\n", x, y, x - y);
@@ -38,7 +38,7 @@ public class BasicSwitch {
 			break;
 			
 			default:
-				System.err.printf("¿¬»êÀÚ ¹øÈ£¸¦ Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù.");
+				System.err.printf("ì—°ì‚°ì ë²ˆí˜¸ë¥¼ ì˜ëª» ì…ë ¥í–ˆìŠµë‹ˆë‹¤.");
 
 		}
 		

@@ -14,7 +14,7 @@ public class Ex8 {
 		int max1 = (A > B) ? A : B;
 		int max2 = (max1 > C) ? max1 : C;
 		
-		System.out.printf("°¡Àå Å« ¼ö´Â %dÀÔ´Ï´Ù.", max2);
+		System.out.printf("ê°€ì¥ í° ìˆ˜ëŠ” %dì…ë‹ˆë‹¤.", max2);
 		
 	}
 	

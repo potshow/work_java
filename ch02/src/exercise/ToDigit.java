@@ -10,9 +10,9 @@ public class ToDigit {
 				
 		int A = input.nextInt();
 		
-		System.out.printf("8Áø¼ö : %o ", A);
-		System.out.printf("10Áø¼ö : %d ", A);
-		System.out.printf("16Áø¼ö : %x", A);
+		System.out.printf("8ì§„ìˆ˜ : %o ", A);
+		System.out.printf("10ì§„ìˆ˜ : %d ", A);
+		System.out.printf("16ì§„ìˆ˜ : %x", A);
 		
 		input.close();
 		

@@ -7,7 +7,7 @@ public class BitComp {
 		int x = 3;
 		int y = 0xffff_ffff;
 		
-		System.out.format("%dÀÇ ÀÌÁø¼ö : %s %n");
+		System.out.format("%dì˜ ì´ì§„ìˆ˜ : %s %n");
 		
 	}
 	

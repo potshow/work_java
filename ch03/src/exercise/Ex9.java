@@ -8,18 +8,18 @@ public class Ex9 {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Å°¿Í ¸ö¹«°Ô¸¦ ¼ø¼­´ë·Î ÀÔ·ÂÇÏ¼¼¿ä >>");
+		System.out.println("í‚¤ì™€ ëª¸ë¬´ê²Œë¥¼ ìˆœì„œëŒ€ë¡œ ìž…ë ¥í•˜ì„¸ìš” >>");
 		double height = input.nextInt();
 		double weight = input.nextInt();
 		
 		
 		if (weight <= (height - 100)*0.9) {
 		
-			System.out.println("Á¤»óÀÔ´Ï´Ù.");
+			System.out.println("ì •ìƒìž…ë‹ˆë‹¤.");
 			
 		} else {
 			
-		System.out.println("ºñ¸¸ÀÔ´Ï´Ù.");
+		System.out.println("ë¹„ë§Œìž…ë‹ˆë‹¤.");
 		}
 	
 	}
