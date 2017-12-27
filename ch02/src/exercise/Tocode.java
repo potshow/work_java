@@ -4,7 +4,7 @@ public class Tocode {
 
 	public static void main(String[] args) {
 		
-		char char02 = 'ÀÚ';
+		char char02 = 'ê°€';
 		
 		System.out.println(char02);
 		
