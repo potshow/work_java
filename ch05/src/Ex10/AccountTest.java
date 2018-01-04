@@ -7,12 +7,9 @@ public class AccountTest {
 		
 		Account woman = new Account("김길동", 50000);
 		
-		woman.setBalance(50000);
-		woman.setOwner("김길동");
+		System.out.println("현재 잔액: " + woman.withdraw(60000));
 		
-		woman.withdraw(60000);
-		
-		System.out.println("잔액 : " + getBalance());
+
 		
 	}
 	
