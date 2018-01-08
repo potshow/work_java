@@ -16,7 +16,6 @@ public class TestCar {
 		mycar.speedDown(30);
 		mycar.speedUp(100);
 		mycar.speedUp(300);
-		
 	}
 	
 }
