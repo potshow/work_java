@@ -1,7 +1,7 @@
 package exercise;
 
 public class Person2 {
-
+/*
 	String name;
 	
 	public Person() {
@@ -17,5 +17,5 @@ public class Person2 {
 		Person p2 = new Person("진태");
 		System.out.println(p2.name);
 	}
-	
+*/	
 }

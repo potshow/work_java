@@ -9,7 +9,7 @@ public class UpCasting {
 		Faculty f = new Faculty("김영태", 1145782, "연한대학교", 38764);
 		Person p = f;		/* 부모타입의 변수는 자식 객체를 저장할 수 있다.
 							 * 부모의 타입에 자식의 객체를 넣을수있다. 
-							 * 부모가 자식을 품었다 Person < 타입 / f < 자식의 객체
+							 * 부모가 자식을 품었다 Person : 타입 / f : 자식의 객체
 							 */
 		//System.out.print(p.name + " " + p.number + " ");
 		//System.out.print(p.univ); //참조불가능 < Person 클래스에 univ 필드값이 없기때문에 참조가 안됩니다.
