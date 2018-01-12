@@ -16,6 +16,6 @@ public class CalendarTest {
 		int second = now.get(Calendar.SECOND);
 		
 		System.out.println(year + "년 " + month + "월 " + date + "일");
-		System.out.println(hour + "시 " + minute + "분 " + second + "초");
+		System.out.println(hour + ":" + minute + ":" + second);
 	}
 }

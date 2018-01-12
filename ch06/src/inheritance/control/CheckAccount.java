@@ -29,7 +29,8 @@ public class CheckAccount extends Account {
 		cAccount.withdraw(50000);
 		cAccount.checkBalance();
 		
-		//privated는 상속받는 애의 그~내부!에서 써야 오류안뜸.
+		//private는 상속받는 애의 그~내부!에서 써야 오류안뜸.
+		//private 
 		
 		System.out.println(cAccount.name);		//접근 ㅇㅋ
 		System.out.println(cAccount.open);		//접근 ㅇㅋ
