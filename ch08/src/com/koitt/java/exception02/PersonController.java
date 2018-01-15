@@ -33,8 +33,15 @@ public class PersonController {
 			System.out.print("메뉴번호 입력 > ");
 
 			// 입력받은 메뉴번호
-			int menu = Integer.parseInt(input.nextLine()); // 한 줄 단위로 입력받음(String 타입)
+			int menu = -1;
+			try {
+			
+			menu = Integer.parseInt(input.nextLine()); // 한 줄 단위로 입력받음(String 타입)
 
+			} catch (NumberFormatException e) {
+				System.out.println("메뉴는 숫자로 입력하셔야 합니다.");
+				continue;
+			}
 			switch (menu) {
 			case 1:
 				controller.menuAdd();
