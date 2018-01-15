@@ -2,6 +2,8 @@ package com.koitt.java.exception02;
 
 import java.util.List;
 
+import Exception.MyException;
+
 public class PersonService {
 	
 	private PersonDao dao;
@@ -10,12 +12,22 @@ public class PersonService {
 		this.dao = new PersonDao();
 	}
 	
-	public void add(Person p) {
+	public void add(Person p) throws MyException {
 		dao.insert(p);
 	}
 	
 	public List<Person> read(){
 		return dao.selectAll();
 	}
+	
+	public void remove(Person p) throws MyException {
+		dao.delete(p);
+	}
+	
+	public void modify(Person p) throws MyException {
+		dao.update(p);
+	}
+	
+	
 
 }
