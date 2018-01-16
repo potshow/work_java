@@ -4,18 +4,18 @@ import java.util.Date;
 
 public class Board {
 
-	private int id;			// 게시물 번호
+	private Integer id;			// 게시물 번호
 	private String title;	// 제목
 	private String content;	// 내용
 	private String writer;	// 작성자
 	private Date regDate;	// 작성일
-	
-	
+
+	// 기본생성자
 	public Board() {
 	}
-	
-	public Board(int id, String title, String content, String writer, Date regDate) {
-		super();
+
+	// 필드 전체를 초기화하는 생성자
+	public Board(Integer id, String title, String content, String writer, Date regDate) {
 		this.id = id;
 		this.title = title;
 		this.content = content;
@@ -23,45 +23,91 @@ public class Board {
 		this.regDate = regDate;
 	}
 
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("Board [id=");
-		builder.append(id);
-		builder.append(", title=");
-		builder.append(title);
-		builder.append(", content=");
-		builder.append(content);
-		builder.append(", writer=");
-		builder.append(writer);
-		builder.append(", regDate=");
-		builder.append(regDate);
-		builder.append("]");
-		return builder.toString();
+
+	// getter setter
+	public Integer getId() {
+		return id;
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + id;
-		return result;
+	public void setId(int id) {
+		this.id = id;
 	}
 
-	@Override
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public String getWriter() {
+		return writer;
+	}
+
+	public void setWriter(String writer) {
+		this.writer = writer;
+	}
+
+	public Date getRegDate() {
+		return regDate;
+	}
+
+	public void setRegDate(Date regDate) {
+		this.regDate = regDate;
+	}
+
+	// id로 비교하는 equals 구현
 	public boolean equals(Object obj) {
-		if (this == obj)
+		if (this == obj) {
 			return true;
-		if (obj == null)
+		}
+
+		if (!(obj instanceof Board)) {
 			return false;
-		if (getClass() != obj.getClass())
+		}
+
+		Board b = (Board) obj;
+		if (this.id != id) {
 			return false;
-		Board other = (Board) obj;
-		if (id != other.id)
-			return false;
+		}
 		return true;
 	}
+
+	// 해쉬코드 : 글제목+id
+	public int hashCode() {
+		return this.title.hashCode() + this.id
+		+ this.content.hashCode() + this.writer.hashCode()
+		+ this.regDate.hashCode();
+	}
+
+	// toString
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("글번호 : ");
+		sb.append(this.id);
+		sb.append("  제목 : ");
+		sb.append(this.title);
+		sb.append("  글 내용 < ");
+		sb.append(this.content);
+		sb.append(" >  작성자 [");
+		sb.append(this.writer);
+		sb.append("] 작성일 : ");
+		sb.append(this.regDate);
+		return sb.toString();
+	}
+
 	
-	
-	
+
+
+
+
 }
