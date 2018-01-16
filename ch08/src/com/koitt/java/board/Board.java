@@ -1,5 +1,6 @@
 package com.koitt.java.board;
 
+import java.text.DateFormat;
 import java.util.Date;
 
 public class Board {
@@ -9,6 +10,7 @@ public class Board {
 	private String content;	// 내용
 	private String writer;	// 작성자
 	private Date regDate;	// 작성일
+	private DateFormat df;
 
 	// 기본생성자
 	public Board() {
@@ -76,7 +78,7 @@ public class Board {
 		}
 
 		Board b = (Board) obj;
-		if (this.id != id) {
+		if (this.id != b.id) {
 			return false;
 		}
 		return true;
