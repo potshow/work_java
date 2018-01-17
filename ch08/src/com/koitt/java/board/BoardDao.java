@@ -44,5 +44,15 @@ public class BoardDao {
 		}
 		throw new BoardException("E02: 수정할 데이터가 없습니다.");
 	}
+	
+	// 해당 글이 존재하는지 여부 확인 메소드
+	public boolean isExist(Board board) {
+		for (Board item : this.list) {
+			if (item.equals(board)) {
+				return true;			// 글이 존재할 경우 true 리턴
+			}
+			return false;
+		}
+	}
 }
 

@@ -1,16 +1,15 @@
 package com.koitt.java.board;
 
-import java.text.DateFormat;
+import java.io.Serializable;
 import java.util.Date;
 
-public class Board {
+public class Board implements Serializable {
 
 	private Integer id;			// 게시물 번호
 	private String title;	// 제목
 	private String content;	// 내용
 	private String writer;	// 작성자
 	private Date regDate;	// 작성일
-	private DateFormat df;
 
 	// 기본생성자
 	public Board() {
@@ -78,13 +77,15 @@ public class Board {
 		}
 
 		Board b = (Board) obj;
-		if (this.id != b.id) {
-			return false;
+		if (this.id.equals(b.id)) {
+			return true;
 		}
-		return true;
+		return false;
 	}
 
 	// 해쉬코드 : 글제목+id
+	// int 에는 hashCode 못씀. int 값 자체로 주소값 형성. Integer는 hashCode 가능
+	// class 타입에 hashCode 가능!!!!
 	public int hashCode() {
 		return this.title.hashCode() + this.id
 		+ this.content.hashCode() + this.writer.hashCode()

@@ -77,7 +77,10 @@ public class BoardController {
 		System.out.print("내용 : ");
 		String content = this.input.nextLine();
 
+		
+		
 		Board b = new Board(0, title, content, writer, new Date());
+		// 생성한 객체를 service로 전송한다.
 		this.service.add(b);
 
 	}
@@ -114,7 +117,7 @@ public class BoardController {
 	}
 
 	public void menuModify() {
-		Integer id = 1;
+		Integer id = null;
 		try {
 			System.out.println("수정할 게시글 번호 : ");
 			id = Integer.parseInt(input.nextLine());
