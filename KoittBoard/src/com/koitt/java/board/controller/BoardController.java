@@ -24,7 +24,7 @@ public class BoardController {
 		Scanner input = new Scanner(System.in);
 		
 		while (true) {
-			System.out.println("=== KOITT 게시판 ===");
+			System.out.println("==== KOITT 게시판 ====");
 			System.out.println("1. 게시글 추가");
 			System.out.println("2. 게시글 전체목록 출력");
 			System.out.println("3. 게시글 삭제");
@@ -32,7 +32,7 @@ public class BoardController {
 			System.out.println("5. 프로그램 종료");
 			System.out.print("메뉴번호 입력 > ");
 			
-			// 1.
+
 			int menu = -1;	// try 안쪽에 있던 menu 변수를 바깥으로 뺐다.
 			try {
 				menu = Integer.parseInt(input.nextLine());
@@ -52,17 +52,17 @@ public class BoardController {
 					break;
 					
 				case 3:
-					// 4.
+
 					controller.menuRemove();
 					break;
 				
 				case 4:
-					// 4.
+
 					controller.menuModify();
 					break;
 					
 				case 5:
-					// 1.
+
 					System.out.println("안녕히 가세요~");
 					input.close();	// 표준 입출력 종료
 					System.exit(0);	// 0: 정상종료
@@ -93,7 +93,6 @@ public class BoardController {
 		 */															// 7.
 		Board board = new Board(null, title, content, writer, null, null);
 		
-		// 4.
 		try {
 			// 생성한 객체를 service로 전달한다.
 			this.service.add(board);
@@ -104,22 +103,22 @@ public class BoardController {
 		}
 	}
 	
-	// 3.
+
 	public void menuRead() {
-		System.out.println("=== 게시글 전체목록 출력 ===");
+		System.out.println("==== 게시글 전체목록 출력 ====");
 		List<Board> list = this.service.read();
 		for (Board item : list) {
 			System.out.println(item);
 		}
 	}
 	
-	// 3.
+
 	public void menuRemove() {
-		System.out.println("=== 게시글 삭제 ===");
+		System.out.println("==== 게시글 삭제 ====");
 		
 		System.out.print("삭제할 글 번호를 입력하세요: ");
 		
-		// 1.
+
 		Integer id = null;
 		try {
 			id = Integer.parseInt(this.input.nextLine());
@@ -133,7 +132,7 @@ public class BoardController {
 		Board board = new Board();
 		board.setId(id);
 		
-		// 4.
+
 		try {
 			this.service.remove(board);
 			System.out.println(board.getId() + "번의 게시글이 삭제되었습니다.");
@@ -143,13 +142,13 @@ public class BoardController {
 		}
 	}
 	
-	// 3.
+
 	public void menuModify() {
-		System.out.println("=== 게시글 수정 ===");
+		System.out.println("==== 게시글 수정 ====");
 		
 		System.out.print("수정할 글 번호를 입력하세요: ");
 		
-		// 1.
+
 		Integer id = null;
 		try {
 			id = Integer.parseInt(this.input.nextLine());
@@ -159,7 +158,7 @@ public class BoardController {
 			return;
 		}
 		
-		// 4.
+
 		Board tempBoard = new Board(id, null, null, null, null, null);
 		boolean isExist = this.service.isExist(tempBoard);
 		if (!isExist) {
@@ -176,10 +175,10 @@ public class BoardController {
 		/*
 		 * writer: 변경되지 않기 때문에 null
 		 * regDate: 변경되지 않기 때문에 null
-		 */														// 8.
+		 */													
 		Board board = new Board(id, title, content, null, null, null);
 		
-		// 4.
+
 		try {
 			this.service.modify(board);
 			System.out.println(board.getId() + "번 글이 수정되었습니다.");

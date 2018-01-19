@@ -6,14 +6,19 @@ import java.util.List;
 import com.koitt.java.board.dao.BoardDao;
 import com.koitt.java.board.exception.BoardException;
 import com.koitt.java.board.model.Board;
+import com.koitt.java.util.FileManager;
 
 public class BoardService {
+	
+	public static final String COUNT_FILE_NAME = "board-count.dat";
 	
 	private BoardDao dao;
 	private Integer count;	// 기본값이 null 이기 때문에 생성자에서 0으로 초기화해야 한다.
 	
 	public BoardService() {
 		this.dao = new BoardDao();
+		
+		List<Board> FileManager.loadFromFile(COUNT_FILE_NAME);
 		this.count = 0;	// 0으로 초기화
 	}
 	
