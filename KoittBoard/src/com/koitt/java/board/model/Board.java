@@ -5,6 +5,13 @@ import java.util.Date;
 
 // Java Bean 만들기
 public class Board implements Serializable {
+	
+	
+	// int의 기본값 = 0;
+	// Integer의 기본값 = null;
+	// if 문에서 null 값을 가지는지에 대한 검사를 할떄 integer를 쓰는것.
+	// int에 아무 값도 없을 때 null이 뜨게하기 위해 Integer를 쓰는것. 
+	
 	private Integer id;		// 글 번호
 	private String title;	// 글 제목
 	private String content;	// 글 내용
