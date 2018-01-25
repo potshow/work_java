@@ -11,7 +11,11 @@ public class ExStaticBlock {
 		System.out.println("static block 실행: " + ExStaticBlock.staticNum);
 	}
 	
-	// instance block
+	/* instance block
+	 * - 생성자보다 먼저 싱행이 됨.
+	 * - 여러 생성자의 공통적인 코드를 instance block에 구현하면 편리함. 
+	 */
+	
 	{
 		System.out.print("instance block 실행: ");
 		System.out.print(ExStaticBlock.staticNum + " / ");
@@ -21,6 +25,10 @@ public class ExStaticBlock {
 	// 기본 생성자
 	public ExStaticBlock() {
 		System.out.println("기본생성자 실행: " + this.num);
+	}
+	
+	public ExStaticBlock(String test) {
+		System.out.println("ExStaticBlock(String test) 실행");
 	}
 	
 	public static void main(String[] args) {

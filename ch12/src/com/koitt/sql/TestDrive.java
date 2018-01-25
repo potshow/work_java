@@ -18,5 +18,6 @@ public class TestDrive {
 		//Class.forName("com.koitt.sql.ExStaticBlock");
 		new ExStaticBlock();
 		new ExStaticBlock();
+		new ExStaticBlock("테스트");
 	}
 }
