@@ -1,4 +1,4 @@
-package programming.excercise;
+package programming.course;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class CreadteDeptTable {
+public class CreateCourseTable {
 
 	public static void main(String[] args) {
 
@@ -14,10 +14,11 @@ public class CreadteDeptTable {
 		String dbName = "univ";
 		String dbURL = "jdbc:mysql://localhost:3306/" + dbName;
 
-		String sqlCT = "CREATE TABLE department (" +
-				"id int, " +
+		String sqlCT = "CREATE TABLE course (" +
+				"id INT, " +
 				"name VARCHAR(30), " +
-				"numstudent INT, " +
+				"professor VARCHAR(30), " +
+				"maxnum INT, " +
 				"PRIMARY KEY ( id ) " +
 				");";
 		
@@ -35,7 +36,7 @@ public class CreadteDeptTable {
 			
 			// sql문 작성
 			stmt.executeUpdate(sqlCT);
-			System.out.println("테이블 departmaent 생성 완료");
+			System.out.println("테이블 course 생성 완료");
 			
 			// 객체연결해제
 			stmt.close();

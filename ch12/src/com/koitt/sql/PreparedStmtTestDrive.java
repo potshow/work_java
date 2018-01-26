@@ -27,7 +27,6 @@ public class PreparedStmtTestDrive {
 			String sql = "INSERT INTO student VALUES(?, ?, ?, ?)";
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, "04");
-			
 			pstmt.setString(2, "고");
 			pstmt.setInt(3, 20131122);
 			pstmt.setString(4, "컴퓨터공학과");
