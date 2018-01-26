@@ -109,7 +109,7 @@ public class Board implements Serializable {
 		
 		// 5-3. Argument 다운캐스팅
 		Board b = (Board) obj;
-		if (this.id.equals(b.id)) {
+		if (this.id != null && this.id.equals(b.id)) {
 			return true;
 		}
 		

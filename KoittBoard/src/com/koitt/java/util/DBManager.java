@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import com.koitt.java.board.model.Board;
 
@@ -46,9 +47,9 @@ public class DBManager {
 	
 	////////////////////////////////// -> 여까지를 싱글턴패턴이라고 부름.
 	
-	public List<Board> selectAll() throws ClassNotFoundException, SQLException {
-		Class.forName(DRIVER_NAME);
-		conn = DriverManager.getConnection(URL, ID, PASSWORD);
+	public List<Board> selectAll() throws SQLException {
+		
+		conn = DriverManager.getConnection(URL + "/" + DB_NAME , ID, PASSWORD);
 		String sql = "SELECT * FROM board";
 		pstmt = conn.prepareStatement(sql);
 		rs = pstmt.executeQuery();
@@ -57,6 +58,7 @@ public class DBManager {
 
 		// while문을 돌면서 객체를 하나씩 만들 것이다.
 		// resultset을 이용할 것이다.
+		
 		while(rs.next()) {
 			Board item = new Board(
 					rs.getInt("no"),
@@ -67,6 +69,67 @@ public class DBManager {
 					rs.getDate("modidate"));
 			list.add(item);
 		}
+		this.close();
+		
 		return list;
+	}
+	
+	public void insert(Board board) throws SQLException {
+		
+		// 1. 데이터베이스와 연결
+		conn = DriverManager.getConnection(URL + "/" + DB_NAME , ID, PASSWORD);
+		
+		// 2. SQL문 작성
+		StringBuilder sql = new StringBuilder();
+		sql.append("INSERT INTO board (title, content, writer, regdate, modidate)");
+		sql.append("VALUES (?, ?, ?, CURDATE(), NULL)");
+		
+		// CURDATE() : MySql에서 제공하는 함수.
+		// 3. SQL문 실행을 위한 객체 생성
+		pstmt = conn.prepareStatement(sql.toString());
+		
+		// 4. SQL문의 물음표 채우기
+		pstmt.setString(1, board.getTitle());
+		pstmt.setString(2, board.getContent());
+		pstmt.setString(3, board.getWriter());
+		
+		// 5. SQL문 실행
+		pstmt.executeUpdate();
+		
+		// 6. 객체 연결 해제하는 메소드 호출
+		this.close();
+		
+	}
+	
+	public void delete(Board board) throws SQLException {
+		conn = DriverManager.getConnection(URL + "/" + DB_NAME , ID, PASSWORD);
+		
+		String sql = "DELETE FROM board where no = ?";
+		
+		pstmt = conn.prepareStatement(sql);
+		
+		pstmt.setInt(1, board.getId());
+		
+		pstmt.executeUpdate();
+		
+		this.close();
+	}
+	
+	public void update(Board board) throws SQLException {
+		conn = DriverManager.getConnection(URL + "/" + DB_NAME , ID, PASSWORD);
+
+		String sql = "UPDATE board SET content = ? WHERE content = ?";
+		
+		pstmt = conn.prepareStatement(sql);
+		
+		pstmt.setString(1, board.getContent());
+		pstmt.setString(2, this.sql2);
+	}
+
+	// 객체연결해제
+	private void close() throws SQLException {
+		if (rs != null) { rs.close(); }
+		if (pstmt != null) { pstmt.close(); }
+		if (conn != null) { conn.close(); }
 	}
 }

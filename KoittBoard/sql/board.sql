@@ -9,3 +9,15 @@ CREATE TABLE BOARD(
 		MODIDATE		 DATE				NULL
 );
 
+INSERT INTO BOARD (title, content, writer, regdate, modidate)
+	VALUES ('제목-1', '내용-1', '작성자-1', STR_TO_DATE('26-01-2018', '%d-%m-%Y'), NULL);
+	
+INSERT INTO BOARD (title, content, writer, regdate, modidate)
+	VALUES ('제목-2', '내용-2', '작성자-2', STR_TO_DATE('26-01-2018', '%d-%m-%Y'), NULL);
+
+INSERT INTO BOARD (title, content, writer, regdate, modidate)
+	VALUES ('제목-3', '내용-3', '작성자-3', STR_TO_DATE('26-01-2018', '%d-%m-%Y'), NULL);
+	
+SELECT * FROM BOARD;
+	
+DELETE FROM BOARD WHERE no = 6;
