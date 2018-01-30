@@ -58,7 +58,6 @@ public class BoardController {
 				break;
 
 			case 4:
-
 				controller.menuModify();
 				break;
 
@@ -169,12 +168,17 @@ public class BoardController {
 			return;
 		}
 
+		try {
+			Board tempBoard = new Board(id, null, null, null, null, null);
+			boolean isExist = this.service.isExist(tempBoard);
 
-		Board tempBoard = new Board(id, null, null, null, null, null);
-		boolean isExist = this.service.isExist(tempBoard);
-		if (!isExist) {
-			System.out.println("해당 번호의 게시글이 존재하지 않습니다.");
-			return;
+			
+			if (!isExist) {
+				System.out.println("해당 번호의 게시글이 존재하지 않습니다.");
+				return;
+			}
+		} catch (SQLException e1) {
+			System.out.println("글 존재여부 확인중에 예외발생");
 		}
 
 		System.out.print("글 제목: ");
@@ -196,6 +200,8 @@ public class BoardController {
 		}
 		catch (BoardException e) {
 			System.out.println(e.getMessage());
+		} catch (SQLException e) {
+			System.out.println("update() SQL문 오류");
 		}
 	}
 }

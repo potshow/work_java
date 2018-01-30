@@ -32,13 +32,13 @@ public class BoardService {
 	}
 	
 
-	public void modify(Board board) throws BoardException {
+	public void modify(Board board) throws BoardException, SQLException {
 		board.setModiDate(new Date());
 		dao.update(board);
 	}
 	
 
-	public boolean isExist(Board board) {
+	public boolean isExist(Board board) throws SQLException {
 		return dao.isExist(board);
 	}
 }
